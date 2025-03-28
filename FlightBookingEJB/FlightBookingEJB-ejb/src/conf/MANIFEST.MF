@@ -1,2 +1,2 @@
 Manifest-Version: 1.0
-
+Class-Path: mssql-jdbc-12.10.0.jre8.jar

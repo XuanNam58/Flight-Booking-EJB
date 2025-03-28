@@ -1,3 +1,9 @@
 /FlightBookingEJB/nbproject/private/
 /FlightBookingEJB/FlightBookingEJB-war/nbproject/private/
 /FlightBookingEJB/FlightBookingEJB-ejb/nbproject/private/
+/FlightBookingEJB/build/
+/FlightBookingEJB/dist/
+/FlightBookingEJB/FlightBookingEJB-ejb/dist/
+/FlightBookingEJB/FlightBookingEJB-ejb/build/
+/FlightBookingEJB/FlightBookingEJB-war/build/
+/FlightBookingEJB/FlightBookingEJB-war/dist/
