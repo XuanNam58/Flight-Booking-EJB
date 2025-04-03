@@ -55,11 +55,12 @@
         <h2 class="text-center">Đặt Vé Máy Bay</h2>
         <div class="row justify-content-center">
             <div class="col-md-6 text-center">
-                <div class="seat-container">
-                    <% for (int i = 1; i <= 10; i++) { %>
-                        <div class="seat" onclick="selectSeat(<%= i %>)">S<%= i %></div>
-                    <% } %>
-                </div>
+               <div class="seat-container">
+    <% for (int i = 1; i <= 10; i++) { %>
+        <div class="seat" id="seat<%= i %>" onclick="selectSeat(<%= i %>)">S<%= i %></div>
+    <% } %>
+</div>
+
             </div>
         </div>
     </div>
@@ -76,24 +77,22 @@
                     <form>
                         <div class="mb-3">
                             <label class="form-label">Tên Hành Khách</label>
-                            <input type="text" class="form-control" required>
+                            <input type="text" class="form-control" value="${sessionScope.user.name}" readonly required>
+
                         </div>
                         <div class="mb-3">
                             <label class="form-label">Email</label>
-                            <input type="email" class="form-control" required>
+                            <input type="email" class="form-control" value="${sessionScope.user.email}" readonly required>
                         </div>
                         <div class="mb-3">
                             <label class="form-label">Số Điện Thoại</label>
-                            <input type="text" class="form-control" required>
+                            <input type="text" class="form-control" value="${sessionScope.user.phoneNum}" readonly required>
                         </div>
                         <div class="mb-3">
                             <label class="form-label">Số CCCD</label>
-                            <input type="text" class="form-control" required placeholder="Nhập số CCCD">
+                            <input type="text" class="form-control" required value="${sessionScope.user.citizenId}" readonly>
                         </div>
-                        <div class="mb-3">
-                            <label class="form-label">Mã TAX</label>
-                            <input type="text" class="form-control" required placeholder="Nhập mã TAX">
-                        </div>
+                       
                         <input type="hidden" id="seat-number" name="seat">
                         <button type="submit" class="btn btn-primary w-100">Xác Nhận Đặt Vé</button>
                     </form>

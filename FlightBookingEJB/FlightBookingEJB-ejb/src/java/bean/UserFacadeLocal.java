@@ -29,4 +29,6 @@ public interface UserFacadeLocal {
 
     int count();
     
+    public User findByUsername(String username);
+    
 }
