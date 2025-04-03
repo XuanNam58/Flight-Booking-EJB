@@ -29,4 +29,6 @@ public interface AccountFacadeLocal {
 
     int count();
     
+    Account login(String username, String password);
+    
 }
